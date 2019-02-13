@@ -1,0 +1,15 @@
+This is the modified Gem5 for prefetch-guard experiments
+step 1. compile the gem5
+    run the following command in gem5-fy folder
+    $./build-gem5.bash 1 
+step 2. compile attacks
+    download folder cc-attacks (also in my homepage)
+    $cd lock-l2pp
+    $make
+    $cd ..
+    $./transfer-file.bash ./lock-l2pp/bin/l2pp-two-threads
+step 3. run the experiments
+    download folder micro2017-exp (in my homepage)
+    $./run-evictway-l2pp.bash
+step 4. observe the output
+    the output would be in the folder configurated in run-evictway-l2pp.bash. the observed latency of spy would appear by the end of the file
