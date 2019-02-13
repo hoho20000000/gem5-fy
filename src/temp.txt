@@ -1,0 +1,4 @@
+./mem/ruby/structures/Prefetcher.cc:       //Addr new_addr=makeLineAddress(0x7ff40000);
+./mem/ruby/structures/Prefetcher.cc:       //Addr new_addr=makeLineAddress(0x7ff40000);
+./mem/ruby/structures/Prefetcher.cc~:       //Addr new_addr=makeLineAddress(0x7ff40000);
+./mem/ruby/structures/Prefetcher.cc~:       //Addr new_addr=makeLineAddress(0x7ff40000);

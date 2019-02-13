@@ -1,0 +1,1 @@
+/home/hongyu/gem5-fy/src/mem/external_master.hh

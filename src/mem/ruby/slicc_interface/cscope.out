@@ -1,0 +1,5782 @@
+cscope 15 $HOME/gem5-fy/src/mem/ruby/slicc_interface               0000030865
+	@AbstractCacheEntry.cc
+
+29 
+	~"mem/ruby/¦icc_š‹rçû/Ab¡¿ùCacheEÁry.hh
+"
+
+31 
+	~"ba£/Œaû.hh
+"
+
+32 
+	~"debug/RubyCache.hh
+"
+
+34 
+	gAb¡¿ùCacheEÁry
+::
+	$Ab¡¿ùCacheEÁry
+()
+
+36 
+m_P”missiÚ
+ = 
+AcûssP”missiÚ_NÙP»£Á
+;
+
+37 
+m_Add»ss
+ = 0;
+
+38 
+m_locked
+ = -1;
+
+39 
+m_cÜe_id
+ = -2;
+
+40 
+	}
+}
+
+42 
+	gAb¡¿ùCacheEÁry
+::~
+	$Ab¡¿ùCacheEÁry
+()
+
+44 
+	}
+}
+
+47 
+Ab¡¿ùCacheEÁry
+::
+	$chªgeP”missiÚ
+(
+AcûssP”missiÚ
+ 
+Ãw_³rm
+)
+
+49 
+Ab¡¿ùEÁry
+::
+	`chªgeP”missiÚ
+(
+Ãw_³rm
+);
+
+50 ià((
+Ãw_³rm
+ =ğ
+AcûssP”missiÚ_Inv®id
+) ||
+
+51 (
+Ãw_³rm
+ =ğ
+AcûssP”missiÚ_NÙP»£Á
+)) {
+
+52 
+m_locked
+ = -1;
+
+54 
+	}
+}
+
+57 
+	gAb¡¿ùCacheEÁry
+::
+	$£tLocked
+(
+cÚ‹xt
+)
+
+59 
+	`DPRINTF
+(
+RubyCache
+, "S‘tšg Lock fÜ‡ddr: %#xØ%d\n", 
+m_Add»ss
+, 
+cÚ‹xt
+);
+
+60 
+m_locked
+ = 
+cÚ‹xt
+;
+
+61 
+	}
+}
+
+64 
+	gAb¡¿ùCacheEÁry
+::
+	$ş—rLocked
+()
+
+66 
+	`DPRINTF
+(
+RubyCache
+, "CË¬ Lock fÜ‡ddr: %#x\n", 
+m_Add»ss
+);
+
+67 
+m_locked
+ = -1;
+
+68 
+	}
+}
+
+70 
+boŞ
+
+
+71 
+	gAb¡¿ùCacheEÁry
+::
+	$isLocked
+(
+cÚ‹xt
+) const
+
+73 
+	`DPRINTF
+(
+RubyCache
+, "Testing Lock for‡ddr: %#llx cur %d con %d\n",
+
+74 
+m_Add»ss
+, 
+m_locked
+, 
+cÚ‹xt
+);
+
+75  
+m_locked
+ =ğ
+cÚ‹xt
+;
+
+76 
+	}
+}
+
+	@AbstractCacheEntry.hh
+
+33 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_ABSTRACTCACHEENTRY_HH__
+
+
+34 
+	#__MEM_RUBY_SLICC_INTERFACE_ABSTRACTCACHEENTRY_HH__
+
+
+	)
+
+36 
+	~<io¡»am
+>
+
+38 
+	~"ba£/misc.hh
+"
+
+39 
+	~"mem/´ÙocŞ/AcûssP”missiÚ.hh
+"
+
+40 
+	~"mem/ruby/commÚ/Add»ss.hh
+"
+
+41 
+	~"mem/ruby/¦icc_š‹rçû/Ab¡¿ùEÁry.hh
+"
+
+43 
+şass
+ 
+	gD©aBlock
+;
+
+45 şas 
+	cAb¡¿ùCacheEÁry
+ : 
+public
+ 
+Ab¡¿ùEÁry
+
+
+47 
+public
+:
+
+48 
+Ab¡¿ùCacheEÁry
+();
+
+49 
+	mvœtu®
+ ~
+Ab¡¿ùCacheEÁry
+() = 0;
+
+52 
+chªgeP”missiÚ
+(
+AcûssP”missiÚ
+ 
+Ãw_³rm
+);
+
+56 
+vœtu®
+ 
+	mD©aBlock
+& 
+	$g‘D©aBlk
+()
+
+57 { 
+	`·nic
+("getDataBlk()‚ot implemented!"); }
+
+59 
+v®idBlocks
+;
+
+60 
+vœtu®
+ & 
+	$g‘NumV®idBlocks
+()
+
+62  
+v®idBlocks
+;
+
+63 
+	}
+}
+
+67 
+£tLocked
+(
+cÚ‹xt
+);
+
+68 
+ş—rLocked
+();
+
+69 
+boŞ
+ 
+	$isLocked
+(
+cÚ‹xt
+) const;
+
+71 
+	$£tS‘Index
+(
+ušt32_t
+ 
+s
+è{ 
+m_£t_šdex
+ = s; 
+	}
+}
+
+72 
+ušt32_t
+ 
+	$g‘S‘Index
+(ècÚ¡ {  
+m_£t_šdex
+; 
+	}
+}
+
+74 
+	$£tWayIndex
+(
+ušt32_t
+ 
+s
+è{ 
+m_way_šdex
+ = s; 
+	}
+}
+
+75 
+ušt32_t
+ 
+	$g‘WayIndex
+(ècÚ¡ {  
+m_way_šdex
+; 
+	}
+}
+
+78 
+	$£tCÜeId
+(
+cÜe_id
+è{ 
+m_cÜe_id
+ = cÜe_id; 
+	}
+}
+
+79 
+	$g‘CÜeId
+(ècÚ¡ {  
+m_cÜe_id
+; 
+	}
+}
+
+82 
+Addr
+ 
+	gm_Add»ss
+;
+
+85 
+	gm_locked
+;
+
+87 
+	g´iv©e
+:
+
+89 
+ušt32_t
+ 
+m_£t_šdex
+;
+
+90 
+ušt32_t
+ 
+	gm_way_šdex
+;
+
+91 
+	gm_cÜe_id
+;
+
+94 
+šlše
+ 
+	g¡d
+::
+o¡»am
+&
+
+95 
+İ”©Ü
+<<(
+¡d
+::
+o¡»am
+& 
+out
+, cÚ¡ 
+	gAb¡¿ùCacheEÁry
+& 
+	gobj
+)
+
+97 
+	gobj
+.
+´št
+(
+out
+);
+
+98 
+	gout
+ << 
+	g¡d
+::
+æush
+;
+
+99  
+	gout
+;
+
+	@AbstractController.cc
+
+29 
+	~"mem/ruby/¦icc_š‹rçû/Ab¡¿ùCÚŒŞËr.hh
+"
+
+31 
+	~"debug/RubyQueue.hh
+"
+
+32 
+	~"mem/´ÙocŞ/MemÜyMsg.hh
+"
+
+33 
+	~"mem/ruby/sy¡em/RubySy¡em.hh
+"
+
+34 
+	~"mem/ruby/sy¡em/Sequ’ûr.hh
+"
+
+35 
+	~"mem/ruby/sy¡em/GPUCßËsûr.hh
+"
+
+36 
+	~"sim/sy¡em.hh
+"
+
+38 
+	gAb¡¿ùCÚŒŞËr
+::
+	$Ab¡¿ùCÚŒŞËr
+(cÚ¡ 
+P¬ams
+ *
+p
+)
+
+39 : 
+	`MemObjeù
+(
+p
+), 
+	`CÚsum”
+(
+this
+), 
+	`m_v”siÚ
+Õ->
+v”siÚ
+),
+
+40 
+	`m_şu¡”ID
+(
+p
+->
+şu¡”_id
+),
+
+41 
+	`m_ma¡”Id
+(
+p
+->
+sy¡em
+->
+	`g‘Ma¡”Id
+(
+	`Çme
+())), 
+	`m_is_blockšg
+(
+çl£
+),
+
+42 
+	`m_numb”_of_TBEs
+(
+p
+->
+numb”_of_TBEs
+),
+
+43 
+	`m_Œªs™iÚs_³r_cyşe
+(
+p
+->
+Œªs™iÚs_³r_cyşe
+),
+
+44 
+	`m_bufãr_size
+(
+p
+->
+bufãr_size
+), 
+	`m_»cyşe_Ï‹ncy
+Õ->
+»cyşe_Ï‹ncy
+),
+
+45 
+	`memÜyPÜt
+(
+	`c¥rštf
+("%s.memÜy", 
+	`Çme
+()), 
+this
+, "")
+
+47 ià(
+m_v”siÚ
+ == 0) {
+
+50 
+Sts
+::
+	`»gi¡”DumpC®lback
+(
+Ãw
+ 
+	`StsC®lback
+(
+this
+));
+
+52 
+	}
+}
+
+55 
+	gAb¡¿ùCÚŒŞËr
+::
+	$š™
+()
+
+57 
+	`·¿ms
+()->
+ruby_sy¡em
+->
+	`»gi¡”Ab¡¿ùCÚŒŞËr
+(
+this
+);
+
+58 
+m_d–ayHi¡og¿m
+.
+	`š™
+(10);
+
+59 
+ušt32_t
+ 
+size
+ = 
+N‘wÜk
+::
+	`g‘Numb”OfVœtu®N‘wÜks
+();
+
+60 
+ušt32_t
+ 
+i
+ = 0; i < 
+size
+; i++) {
+
+61 
+m_d–ayVCHi¡og¿m
+.
+	`push_back
+(
+Ãw
+ 
+Sts
+::
+	`Hi¡og¿m
+());
+
+62 
+m_d–ayVCHi¡og¿m
+[
+i
+]->
+	`š™
+(10);
+
+64 
+	}
+}
+
+67 
+	gAb¡¿ùCÚŒŞËr
+::
+	$»£tSts
+()
+
+69 
+m_d–ayHi¡og¿m
+.
+	`»£t
+();
+
+70 
+ušt32_t
+ 
+size
+ = 
+N‘wÜk
+::
+	`g‘Numb”OfVœtu®N‘wÜks
+();
+
+71 
+ušt32_t
+ 
+i
+ = 0; i < 
+size
+; i++) {
+
+72 
+m_d–ayVCHi¡og¿m
+[
+i
+]->
+	`»£t
+();
+
+74 
+	}
+}
+
+77 
+	gAb¡¿ùCÚŒŞËr
+::
+	$»gSts
+()
+
+79 
+m_fuÎy_busy_cyşes
+
+
+80 .
+	`Çme
+(name() + ".fully_busy_cycles")
+
+81 .
+	`desc
+("cycles for which‚umber ofransistions == maxransitions")
+
+82 .
+	`æags
+(
+Sts
+::
+noz”o
+);
+
+83 
+	}
+}
+
+86 
+	gAb¡¿ùCÚŒŞËr
+::
+	$´ofeMsgD–ay
+(
+ušt32_t
+ 
+vœtu®N‘wÜk
+, 
+Cyşes
+ 
+d–ay
+)
+
+88 
+	`as£¹
+(
+vœtu®N‘wÜk
+ < 
+m_d–ayVCHi¡og¿m
+.
+	`size
+());
+
+89 
+m_d–ayHi¡og¿m
+.
+	`§m¶e
+(
+d–ay
+);
+
+90 
+m_d–ayVCHi¡og¿m
+[
+vœtu®N‘wÜk
+]->
+	`§m¶e
+(
+d–ay
+);
+
+91 
+	}
+}
+
+94 
+	gAb¡¿ùCÚŒŞËr
+::
+	$¡®lBufãr
+(
+Mes§geBufãr
+* 
+buf
+, 
+Addr
+ 
+addr
+)
+
+96 ià(
+m_wa™šg_bufãrs
+.
+	`couÁ
+(
+addr
+) == 0) {
+
+97 
+MsgVecTy³
+* 
+msgVec
+ = 
+Ãw
+ MsgVecType;
+
+98 
+msgVec
+->
+	`»size
+(
+m_š_pÜts
+, 
+NULL
+);
+
+99 
+m_wa™šg_bufãrs
+[
+addr
+] = 
+msgVec
+;
+
+101 
+	`DPRINTF
+(
+RubyQueue
+, "¡®lšg % pÜˆ%d‡dd¸%#x\n", 
+buf
+, 
+m_cur_š_pÜt
+,
+
+102 
+addr
+);
+
+103 
+	`as£¹
+(
+m_š_pÜts
+ > 
+m_cur_š_pÜt
+);
+
+104 (*(
+m_wa™šg_bufãrs
+[
+addr
+]))[
+m_cur_š_pÜt
+] = 
+buf
+;
+
+105 
+	}
+}
+
+108 
+	gAb¡¿ùCÚŒŞËr
+::
+	$wakeUpBufãrs
+(
+Addr
+ 
+addr
+)
+
+110 ià(
+m_wa™šg_bufãrs
+.
+	`couÁ
+(
+addr
+) > 0) {
+
+115 
+š_pÜt_¿nk
+ = 
+m_cur_š_pÜt
+ - 1;
+
+116 
+š_pÜt_¿nk
+ >= 0;
+
+117 
+š_pÜt_¿nk
+--) {
+
+118 ià((*(
+m_wa™šg_bufãrs
+[
+addr
+]))[
+š_pÜt_¿nk
+] !ğ
+NULL
+) {
+
+119 (*(
+m_wa™šg_bufãrs
+[
+addr
+]))[
+š_pÜt_¿nk
+]->
+
+120 
+	`»ª®yzeMes§ges
+(
+addr
+, 
+	`şockEdge
+());
+
+123 
+d–‘e
+ 
+m_wa™šg_bufãrs
+[
+addr
+];
+
+124 
+m_wa™šg_bufãrs
+.
+	`”a£
+(
+addr
+);
+
+126 
+	}
+}
+
+129 
+	gAb¡¿ùCÚŒŞËr
+::
+	$wakeUpAÎBufãrs
+(
+Addr
+ 
+addr
+)
+
+131 ià(
+m_wa™šg_bufãrs
+.
+	`couÁ
+(
+addr
+) > 0) {
+
+136 
+š_pÜt_¿nk
+ = 
+m_š_pÜts
+ - 1;
+
+137 
+š_pÜt_¿nk
+ >= 0;
+
+138 
+š_pÜt_¿nk
+--) {
+
+139 ià((*(
+m_wa™šg_bufãrs
+[
+addr
+]))[
+š_pÜt_¿nk
+] !ğ
+NULL
+) {
+
+140 (*(
+m_wa™šg_bufãrs
+[
+addr
+]))[
+š_pÜt_¿nk
+]->
+
+141 
+	`»ª®yzeMes§ges
+(
+addr
+, 
+	`şockEdge
+());
+
+144 
+d–‘e
+ 
+m_wa™šg_bufãrs
+[
+addr
+];
+
+145 
+m_wa™šg_bufãrs
+.
+	`”a£
+(
+addr
+);
+
+147 
+	}
+}
+
+150 
+	gAb¡¿ùCÚŒŞËr
+::
+	$wakeUpAÎBufãrs
+()
+
+156 
+¡d
+::
+veùÜ
+<
+MsgVecTy³
+*> 
+wokeUpMsgVecs
+;
+
+157 
+MsgBufTy³
+ 
+wokeUpMsgBufs
+;
+
+159 ià(
+m_wa™šg_bufãrs
+.
+	`size
+() > 0) {
+
+160 
+Wa™šgBufTy³
+::
+™”©Ü
+ 
+buf_™”
+ = 
+m_wa™šg_bufãrs
+.
+	`begš
+();
+
+161 
+buf_™”
+ !ğ
+m_wa™šg_bufãrs
+.
+	`’d
+();
+
+162 ++
+buf_™”
+) {
+
+163 
+MsgVecTy³
+::
+™”©Ü
+ 
+vec_™”
+ = 
+buf_™”
+->
+£cÚd
+->
+	`begš
+();
+
+164 
+vec_™”
+ !ğ
+buf_™”
+->
+£cÚd
+->
+	`’d
+();
+
+165 ++
+vec_™”
+) {
+
+169 ià(*
+vec_™”
+ !ğ
+NULL
+ &&
+
+170 (
+wokeUpMsgBufs
+.
+	`couÁ
+(*
+vec_™”
+) == 0)) {
+
+171 (*
+vec_™”
+)->
+	`»ª®yzeAÎMes§ges
+(
+	`şockEdge
+());
+
+172 
+wokeUpMsgBufs
+.
+	`š£¹
+(*
+vec_™”
+);
+
+175 
+wokeUpMsgVecs
+.
+	`push_back
+(
+buf_™”
+->
+£cÚd
+);
+
+178 
+¡d
+::
+veùÜ
+<
+MsgVecTy³
+*>::
+™”©Ü
+ 
+wb_™”
+ = 
+wokeUpMsgVecs
+.
+	`begš
+();
+
+179 
+wb_™”
+ !ğ
+wokeUpMsgVecs
+.
+	`’d
+();
+
+180 ++
+wb_™”
+) {
+
+181 
+	`d–‘e
+ (*
+wb_™”
+);
+
+184 
+m_wa™šg_bufãrs
+.
+	`ş—r
+();
+
+186 
+	}
+}
+
+189 
+	gAb¡¿ùCÚŒŞËr
+::
+	$blockOnQueue
+(
+Addr
+ 
+addr
+, 
+Mes§geBufãr
+* 
+pÜt
+)
+
+191 
+m_is_blockšg
+ = 
+Œue
+;
+
+192 
+m_block_m­
+[
+addr
+] = 
+pÜt
+;
+
+193 
+	}
+}
+
+196 
+	gAb¡¿ùCÚŒŞËr
+::
+	$unblock
+(
+Addr
+ 
+addr
+)
+
+198 
+m_block_m­
+.
+	`”a£
+(
+addr
+);
+
+199 ià(
+m_block_m­
+.
+	`size
+() == 0) {
+
+200 
+m_is_blockšg
+ = 
+çl£
+;
+
+202 
+	}
+}
+
+204 
+boŞ
+
+
+205 
+	gAb¡¿ùCÚŒŞËr
+::
+	$isBlocked
+(
+Addr
+ 
+addr
+)
+
+207  (
+m_block_m­
+.
+	`couÁ
+(
+addr
+) > 0);
+
+208 
+	}
+}
+
+210 
+	gBa£Ma¡”PÜt
+ &
+
+211 
+	gAb¡¿ùCÚŒŞËr
+::
+g‘Ma¡”PÜt
+(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+if_Çme
+,
+
+212 
+PÜtID
+ 
+idx
+)
+
+214  
+	gmemÜyPÜt
+;
+
+218 
+	gAb¡¿ùCÚŒŞËr
+::
+	$queueMemÜyR—d
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+,
+
+219 
+Cyşes
+ 
+Ï‹ncy
+)
+
+221 
+Reque¡PŒ
+ 
+»q
+ = 
+Ãw
+ 
+	`Reque¡
+(
+addr
+, 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+(), 0,
+
+222 
+m_ma¡”Id
+);
+
+224 
+Pack‘PŒ
+ 
+pkt
+ = 
+Pack‘
+::
+	`ü—‹R—d
+(
+»q
+);
+
+225 
+ušt8_t
+ *
+ÃwD©a
+ = 
+Ãw
+ ušt8_t[
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+()];
+
+226 
+pkt
+->
+	`d©aDyÇmic
+(
+ÃwD©a
+);
+
+228 
+S’d”S‹
+ *
+s
+ = 
+Ãw
+ 
+	`S’d”S‹
+(
+id
+);
+
+229 
+pkt
+->
+	`pushS’d”S‹
+(
+s
+);
+
+232 ià(
+RubySy¡em
+::
+	`g‘W¬mupEÇbËd
+()) {
+
+233 
+memÜyPÜt
+.
+	`£ndFunùiÚ®
+(
+pkt
+);
+
+234 
+	`»cvTimšgRe¥
+(
+pkt
+);
+
+238 
+memÜyPÜt
+.
+	`schedTimšgReq
+(
+pkt
+, 
+	`şockEdge
+(
+Ï‹ncy
+));
+
+239 
+	}
+}
+
+242 
+	gAb¡¿ùCÚŒŞËr
+::
+	$queueMemÜyWr™e
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+,
+
+243 
+Cyşes
+ 
+Ï‹ncy
+, cÚ¡ 
+D©aBlock
+ &
+block
+)
+
+245 
+Reque¡PŒ
+ 
+»q
+ = 
+Ãw
+ 
+	`Reque¡
+(
+addr
+, 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+(), 0,
+
+246 
+m_ma¡”Id
+);
+
+248 
+Pack‘PŒ
+ 
+pkt
+ = 
+Pack‘
+::
+	`ü—‹Wr™e
+(
+»q
+);
+
+249 
+ušt8_t
+ *
+ÃwD©a
+ = 
+Ãw
+ ušt8_t[
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+()];
+
+250 
+pkt
+->
+	`d©aDyÇmic
+(
+ÃwD©a
+);
+
+251 
+	`memıy
+(
+ÃwD©a
+, 
+block
+.
+	`g‘D©a
+(0, 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+()),
+
+252 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+());
+
+254 
+S’d”S‹
+ *
+s
+ = 
+Ãw
+ 
+	`S’d”S‹
+(
+id
+);
+
+255 
+pkt
+->
+	`pushS’d”S‹
+(
+s
+);
+
+258 ià(
+RubySy¡em
+::
+	`g‘W¬mupEÇbËd
+()) {
+
+259 
+memÜyPÜt
+.
+	`£ndFunùiÚ®
+(
+pkt
+);
+
+260 
+	`»cvTimšgRe¥
+(
+pkt
+);
+
+265 
+memÜyPÜt
+.
+	`schedTimšgReq
+(
+pkt
+, 
+	`şockEdge
+(
+Ï‹ncy
+));
+
+266 
+	}
+}
+
+269 
+	gAb¡¿ùCÚŒŞËr
+::
+	$queueMemÜyWr™eP¬tŸl
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+,
+
+270 
+Cyşes
+ 
+Ï‹ncy
+,
+
+271 cÚ¡ 
+D©aBlock
+ &
+block
+, 
+size
+)
+
+273 
+Reque¡PŒ
+ 
+»q
+ = 
+Ãw
+ 
+	`Reque¡
+(
+addr
+, 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+(), 0,
+
+274 
+m_ma¡”Id
+);
+
+276 
+Pack‘PŒ
+ 
+pkt
+ = 
+Pack‘
+::
+	`ü—‹Wr™e
+(
+»q
+);
+
+277 
+ušt8_t
+ *
+ÃwD©a
+ = 
+Ãw
+ ušt8_t[
+size
+];
+
+278 
+pkt
+->
+	`d©aDyÇmic
+(
+ÃwD©a
+);
+
+279 
+	`memıy
+(
+ÃwD©a
+, 
+block
+.
+	`g‘D©a
+(
+	`g‘Off£t
+(
+addr
+), 
+size
+), size);
+
+281 
+S’d”S‹
+ *
+s
+ = 
+Ãw
+ 
+	`S’d”S‹
+(
+id
+);
+
+282 
+pkt
+->
+	`pushS’d”S‹
+(
+s
+);
+
+285 
+memÜyPÜt
+.
+	`schedTimšgReq
+(
+pkt
+, 
+	`şockEdge
+(
+Ï‹ncy
+));
+
+286 
+	}
+}
+
+289 
+	gAb¡¿ùCÚŒŞËr
+::
+	$funùiÚ®MemÜyR—d
+(
+Pack‘PŒ
+ 
+pkt
+)
+
+291 
+memÜyPÜt
+.
+	`£ndFunùiÚ®
+(
+pkt
+);
+
+292 
+	}
+}
+
+295 
+	gAb¡¿ùCÚŒŞËr
+::
+	$funùiÚ®MemÜyWr™e
+(
+Pack‘PŒ
+ 
+pkt
+)
+
+297 
+num_funùiÚ®_wr™es
+ = 0;
+
+300 ià(
+memÜyPÜt
+.
+	`checkFunùiÚ®
+(
+pkt
+)) {
+
+301 
+num_funùiÚ®_wr™es
+++;
+
+305 
+memÜyPÜt
+.
+	`£ndFunùiÚ®
+(
+pkt
+);
+
+306  
+num_funùiÚ®_wr™es
+ + 1;
+
+307 
+	}
+}
+
+310 
+	gAb¡¿ùCÚŒŞËr
+::
+	$»cvTimšgRe¥
+(
+Pack‘PŒ
+ 
+pkt
+)
+
+312 
+	`as£¹
+(
+	`g‘MemÜyQueue
+());
+
+313 
+	`as£¹
+(
+pkt
+->
+	`isRe¥Ú£
+());
+
+315 
+¡d
+::
+sh¬ed_±r
+<
+MemÜyMsg
+> 
+msg
+ = std::
+make_sh¬ed
+<MemÜyMsg>(
+	`şockEdge
+());
+
+316 (*
+msg
+).
+m_addr
+ = 
+pkt
+->
+	`g‘Addr
+();
+
+317 (*
+msg
+).
+m_S’d”
+ = 
+m_machšeID
+;
+
+319 
+S’d”S‹
+ *
+s
+ = 
+dyÇmic_ÿ¡
+<S’d”S‹ *>(
+pkt
+->
+£nd”S‹
+);
+
+320 (*
+msg
+).
+m_Origš®Reque¡ÜMachId
+ = 
+s
+->
+id
+;
+
+321 
+d–‘e
+ 
+s
+;
+
+323 ià(
+pkt
+->
+	`isR—d
+()) {
+
+324 (*
+msg
+).
+m_Ty³
+ = 
+MemÜyReque¡Ty³_MEMORY_READ
+;
+
+325 (*
+msg
+).
+m_Mes§geSize
+ = 
+Mes§geSizeTy³_Re¥Ú£_D©a
+;
+
+328 (*
+msg
+).
+m_D©aBlk
+.
+	`£tD©a
+(
+pkt
+->
+g‘PŒ
+<
+ušt8_t
+>(), 0,
+
+329 
+RubySy¡em
+::
+	`g‘BlockSizeBy‹s
+());
+
+330 } ià(
+pkt
+->
+	`isWr™e
+()) {
+
+331 (*
+msg
+).
+m_Ty³
+ = 
+MemÜyReque¡Ty³_MEMORY_WB
+;
+
+332 (*
+msg
+).
+m_Mes§geSize
+ = 
+Mes§geSizeTy³_Wr™eback_CÚŒŞ
+;
+
+334 
+	`·nic
+("Incorrect…acketype„eceived from memory controller!");
+
+337 
+	`g‘MemÜyQueue
+()->
+	`’queue
+(
+msg
+, 
+	`şockEdge
+(), 
+	`cyşesToTicks
+(
+	`Cyşes
+(1)));
+
+338 
+d–‘e
+ 
+pkt
+->
+»q
+;
+
+339 
+d–‘e
+ 
+pkt
+;
+
+340 
+	}
+}
+
+342 
+boŞ
+
+
+343 
+	gAb¡¿ùCÚŒŞËr
+::
+MemÜyPÜt
+::
+	$»cvTimšgRe¥
+(
+Pack‘PŒ
+ 
+pkt
+)
+
+345 
+cÚŒŞËr
+->
+	`»cvTimšgRe¥
+(
+pkt
+);
+
+346  
+Œue
+;
+
+347 
+	}
+}
+
+349 
+	gAb¡¿ùCÚŒŞËr
+::
+MemÜyPÜt
+::MemÜyPÜt(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+_Çme
+,
+
+350 
+Ab¡¿ùCÚŒŞËr
+ *
+_cÚŒŞËr
+,
+
+351 cÚ¡ 
+¡d
+::
+¡ršg
+ &
+_Ïb–
+)
+
+352 : 
+QueuedMa¡”PÜt
+(
+_Çme
+, 
+_cÚŒŞËr
+, 
+»qQueue
+, 
+¢oİRe¥Queue
+),
+
+353 
+»qQueue
+(*
+_cÚŒŞËr
+, *
+this
+, 
+_Ïb–
+),
+
+354 
+¢oİRe¥Queue
+(*
+_cÚŒŞËr
+, *
+this
+, 
+_Ïb–
+),
+
+355 
+	$cÚŒŞËr
+(
+_cÚŒŞËr
+)
+
+357 
+	}
+}
+
+	@AbstractController.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_ABSTRACTCONTROLLER_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_ABSTRACTCONTROLLER_HH__
+
+
+	)
+
+32 
+	~<exû±iÚ
+>
+
+33 
+	~<io¡»am
+>
+
+34 
+	~<¡ršg
+>
+
+36 
+	~"ba£/ÿÎback.hh
+"
+
+37 
+	~"mem/´ÙocŞ/AcûssP”missiÚ.hh
+"
+
+38 
+	~"mem/ruby/commÚ/Add»ss.hh
+"
+
+39 
+	~"mem/ruby/commÚ/CÚsum”.hh
+"
+
+40 
+	~"mem/ruby/commÚ/D©aBlock.hh
+"
+
+41 
+	~"mem/ruby/commÚ/Hi¡og¿m.hh
+"
+
+42 
+	~"mem/ruby/commÚ/MachšeID.hh
+"
+
+43 
+	~"mem/ruby/ÃtwÜk/Mes§geBufãr.hh
+"
+
+44 
+	~"mem/ruby/ÃtwÜk/N‘wÜk.hh
+"
+
+45 
+	~"mem/ruby/sy¡em/CacheRecÜd”.hh
+"
+
+46 
+	~"mem/·ck‘.hh
+"
+
+47 
+	~"mem/qpÜt.hh
+"
+
+48 
+	~"·¿ms/RubyCÚŒŞËr.hh
+"
+
+49 
+	~"mem/mem_objeù.hh
+"
+
+51 
+şass
+ 
+	gN‘wÜk
+;
+
+52 
+şass
+ 
+	gGPUCßËsûr
+;
+
+55 şas 
+	cRejeùExû±iÚ
+: 
+public
+ 
+¡d
+::
+exû±iÚ
+
+
+57 
+vœtu®
+ cÚ¡ * 
+	$wh©
+(ècÚ¡ 
+	$throw
+()
+
+59 
+	}
+};
+
+61 
+şass
+ 
+	gAb¡¿ùCÚŒŞËr
+ : 
+public
+ 
+MemObjeù
+,…ubliø
+	gCÚsum”
+
+
+63 
+	gpublic
+:
+
+64 
+RubyCÚŒŞËrP¬ams
+ 
+	tP¬ams
+;
+
+65 
+Ab¡¿ùCÚŒŞËr
+(cÚ¡ 
+P¬ams
+ *
+p
+);
+
+66 
+š™
+();
+
+67 cÚ¡ 
+P¬ams
+ *
+·¿ms
+(ècÚ¡ {  (cÚ¡ 
+	gP¬ams
+ *)
+	g_·¿ms
+; }
+
+69 
+NodeID
+ 
+g‘V”siÚ
+(ècÚ¡ {  
+	gm_machšeID
+.
+g‘Num
+(); }
+
+70 
+MachšeTy³
+ 
+g‘Ty³
+(ècÚ¡ {  
+	gm_machšeID
+.getType(); }
+
+72 
+š™N‘wÜkPŒ
+(
+N‘wÜk
+* 
+Ãt_±r
+è{ 
+	gm_Ãt_±r
+ =‚et_ptr; }
+
+75 
+blockOnQueue
+(
+Addr
+, 
+Mes§geBufãr
+*);
+
+76 
+unblock
+(
+Addr
+);
+
+77 
+boŞ
+ 
+isBlocked
+(
+Addr
+);
+
+79 
+vœtu®
+ 
+Mes§geBufãr
+* 
+g‘Mªd©ÜyQueue
+() const = 0;
+
+80 
+vœtu®
+ 
+Mes§geBufãr
+* 
+g‘MemÜyQueue
+() const = 0;
+
+81 
+vœtu®
+ 
+AcûssP”missiÚ
+ 
+g‘AcûssP”missiÚ
+(cÚ¡ 
+Addr
+ &
+addr
+) = 0;
+
+83 
+vœtu®
+ 
+´št
+(
+¡d
+::
+o¡»am
+ & 
+out
+) const = 0;
+
+84 
+vœtu®
+ 
+wakeup
+() = 0;
+
+85 
+vœtu®
+ 
+»£tSts
+() = 0;
+
+86 
+vœtu®
+ 
+»gSts
+();
+
+88 
+vœtu®
+ 
+»cÜdCacheT¿û
+(
+úŒl
+, 
+CacheRecÜd”
+* 
+Œ
+) = 0;
+
+89 
+vœtu®
+ 
+Sequ’ûr
+* 
+g‘CPUSequ’ûr
+() const = 0;
+
+90 
+vœtu®
+ 
+GPUCßËsûr
+* 
+g‘GPUCßËsûr
+() const = 0;
+
+94 
+vœtu®
+ 
+funùiÚ®R—d
+(cÚ¡ 
+Addr
+ &
+addr
+, 
+Pack‘PŒ
+) = 0;
+
+95 
+funùiÚ®MemÜyR—d
+(
+Pack‘PŒ
+);
+
+98 
+vœtu®
+ 
+funùiÚ®Wr™eBufãrs
+(
+Pack‘PŒ
+&) = 0;
+
+99 
+vœtu®
+ 
+funùiÚ®Wr™e
+(cÚ¡ 
+Addr
+ &
+addr
+, 
+Pack‘PŒ
+) = 0;
+
+100 
+funùiÚ®MemÜyWr™e
+(
+Pack‘PŒ
+);
+
+103 
+vœtu®
+ 
+’queueP»ãtch
+(cÚ¡ 
+Addr
+ &, cÚ¡ 
+RubyReque¡Ty³
+&)
+
+104 { 
+çl
+("Prefetches‚ot implemented!");}
+
+109 
+vœtu®
+ 
+cŞÏ‹Sts
+()
+
+110 {
+çl
+("collateStats() should be overridden!");}
+
+113 
+vœtu®
+ 
+š™N‘Queues
+() = 0;
+
+116 
+	gBa£Ma¡”PÜt
+& 
+g‘Ma¡”PÜt
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+if_Çme
+,
+
+117 
+PÜtID
+ 
+idx
+ = 
+Inv®idPÜtID
+);
+
+119 
+queueMemÜyR—d
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+, 
+Cyşes
+ 
+Ï‹ncy
+);
+
+120 
+queueMemÜyWr™e
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+, 
+Cyşes
+ 
+Ï‹ncy
+,
+
+121 cÚ¡ 
+D©aBlock
+ &
+block
+);
+
+122 
+queueMemÜyWr™eP¬tŸl
+(cÚ¡ 
+MachšeID
+ &
+id
+, 
+Addr
+ 
+addr
+, 
+Cyşes
+ 
+Ï‹ncy
+,
+
+123 cÚ¡ 
+D©aBlock
+ &
+block
+, 
+size
+);
+
+124 
+»cvTimšgRe¥
+(
+Pack‘PŒ
+ 
+pkt
+);
+
+126 
+	gpublic
+:
+
+127 
+MachšeID
+ 
+g‘MachšeID
+(ècÚ¡ {  
+m_machšeID
+; }
+
+129 
+	gSts
+::
+Hi¡og¿m
+& 
+g‘D–ayHi¡
+(è{  
+m_d–ayHi¡og¿m
+; }
+
+130 
+	gSts
+::
+Hi¡og¿m
+& 
+g‘D–ayVCHi¡
+(
+ušt32_t
+ 
+šdex
+)
+
+131 {  *(
+m_d–ayVCHi¡og¿m
+[
+šdex
+]); }
+
+133 
+	g´Ùeùed
+:
+
+135 
+´ofeReque¡
+(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+»que¡
+);
+
+137 
+´ofeMsgD–ay
+(
+ušt32_t
+ 
+vœtu®N‘wÜk
+, 
+Cyşes
+ 
+d–ay
+);
+
+139 
+¡®lBufãr
+(
+Mes§geBufãr
+* 
+buf
+, 
+Addr
+ 
+addr
+);
+
+140 
+wakeUpBufãrs
+(
+Addr
+ 
+addr
+);
+
+141 
+wakeUpAÎBufãrs
+(
+Addr
+ 
+addr
+);
+
+142 
+wakeUpAÎBufãrs
+();
+
+144 
+	g´Ùeùed
+:
+
+145 cÚ¡ 
+NodeID
+ 
+m_v”siÚ
+;
+
+146 
+MachšeID
+ 
+	gm_machšeID
+;
+
+147 cÚ¡ 
+NodeID
+ 
+	gm_şu¡”ID
+;
+
+150 cÚ¡ 
+Ma¡”ID
+ 
+	gm_ma¡”Id
+;
+
+152 
+N‘wÜk
+ *
+	gm_Ãt_±r
+;
+
+153 
+boŞ
+ 
+	gm_is_blockšg
+;
+
+154 
+	g¡d
+::
+m­
+<
+Addr
+, 
+	gMes§geBufãr
+*> 
+	gm_block_m­
+;
+
+156 
+	g¡d
+::
+	tveùÜ
+<
+	tMes§geBufãr
+*> 
+	tMsgVecTy³
+;
+
+157 
+	g¡d
+::
+	t£t
+<
+	tMes§geBufãr
+*> 
+	tMsgBufTy³
+;
+
+158 
+	g¡d
+::
+	tm­
+<
+	tAddr
+, 
+	tMsgVecTy³
+* > 
+	tWa™šgBufTy³
+;
+
+159 
+Wa™šgBufTy³
+ 
+	gm_wa™šg_bufãrs
+;
+
+161 
+	gm_š_pÜts
+;
+
+162 
+	gm_cur_š_pÜt
+;
+
+163 cÚ¡ 
+	gm_numb”_of_TBEs
+;
+
+164 cÚ¡ 
+	gm_Œªs™iÚs_³r_cyşe
+;
+
+165 cÚ¡ 
+	gm_bufãr_size
+;
+
+166 
+Cyşes
+ 
+	gm_»cyşe_Ï‹ncy
+;
+
+170 
+	gSts
+::
+SÿÏr
+ 
+m_fuÎy_busy_cyşes
+;
+
+174 
+	gSts
+::
+Hi¡og¿m
+ 
+m_d–ayHi¡og¿m
+;
+
+175 
+	g¡d
+::
+veùÜ
+<
+Sts
+::
+Hi¡og¿m
+ *> 
+m_d–ayVCHi¡og¿m
+;
+
+179 şas 
+	cStsC®lback
+ : 
+public
+ 
+C®lback
+
+
+181 
+´iv©e
+:
+
+182 
+Ab¡¿ùCÚŒŞËr
+ *
+ùr
+;
+
+184 
+	gpublic
+:
+
+185 
+vœtu®
+ ~
+StsC®lback
+() {}
+
+186 
+StsC®lback
+(
+Ab¡¿ùCÚŒŞËr
+ *
+_ùr
+è: 
+ùr
+(_ctr) {}
+
+187 
+´oûss
+(è{
+ùr
+->
+cŞÏ‹Sts
+();}
+
+194 şas 
+	cMemÜyPÜt
+ : 
+public
+ 
+QueuedMa¡”PÜt
+
+
+196 
+´iv©e
+:
+
+198 
+ReqPack‘Queue
+ 
+»qQueue
+;
+
+199 
+SnoİRe¥Pack‘Queue
+ 
+	g¢oİRe¥Queue
+;
+
+202 
+Ab¡¿ùCÚŒŞËr
+ *
+	gcÚŒŞËr
+;
+
+204 
+	gpublic
+:
+
+205 
+MemÜyPÜt
+(cÚ¡ 
+¡d
+::
+¡ršg
+ &
+_Çme
+, 
+Ab¡¿ùCÚŒŞËr
+ *
+_cÚŒŞËr
+,
+
+206 cÚ¡ 
+¡d
+::
+¡ršg
+ &
+_Ïb–
+);
+
+211 
+boŞ
+ 
+»cvTimšgRe¥
+(
+Pack‘PŒ
+ 
+pkt
+);
+
+215 
+MemÜyPÜt
+ 
+	gmemÜyPÜt
+;
+
+218 
+	gS’d”S‹
+ : 
+public
+ 
+Pack‘
+::
+S’d”S‹
+
+
+221 
+MachšeID
+ 
+id
+;
+
+223 
+S’d”S‹
+(
+MachšeID
+ 
+_id
+è: 
+id
+(_id)
+
+	@AbstractEntry.cc
+
+29 
+	~"mem/ruby/¦icc_š‹rçû/Ab¡¿ùEÁry.hh
+"
+
+31 
+	gAb¡¿ùEÁry
+::
+	$Ab¡¿ùEÁry
+()
+
+33 
+m_P”missiÚ
+ = 
+AcûssP”missiÚ_NÙP»£Á
+;
+
+34 
+	}
+}
+
+36 
+	gAb¡¿ùEÁry
+::~
+	$Ab¡¿ùEÁry
+()
+
+38 
+	}
+}
+
+40 
+AcûssP”missiÚ
+
+
+41 
+Ab¡¿ùEÁry
+::
+	$g‘P”missiÚ
+() const
+
+43  
+m_P”missiÚ
+;
+
+44 
+	}
+}
+
+47 
+	gAb¡¿ùEÁry
+::
+	$chªgeP”missiÚ
+(
+AcûssP”missiÚ
+ 
+Ãw_³rm
+)
+
+49 
+m_P”missiÚ
+ = 
+Ãw_³rm
+;
+
+50 
+	}
+}
+
+	@AbstractEntry.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_ABSTRACTENTRY_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_ABSTRACTENTRY_HH__
+
+
+	)
+
+32 
+	~<io¡»am
+>
+
+34 
+	~"mem/´ÙocŞ/AcûssP”missiÚ.hh
+"
+
+36 şas 
+	cAb¡¿ùEÁry
+
+
+38 
+	mpublic
+:
+
+39 
+Ab¡¿ùEÁry
+();
+
+40 
+	mvœtu®
+ ~
+Ab¡¿ùEÁry
+() = 0;
+
+43 
+AcûssP”missiÚ
+ 
+	$g‘P”missiÚ
+() const;
+
+44 
+	`chªgeP”missiÚ
+(
+AcûssP”missiÚ
+ 
+Ãw_³rm
+);
+
+46 
+vœtu®
+ 
+	`´št
+(
+¡d
+::
+o¡»am
+& 
+out
+) const = 0;
+
+48 
+AcûssP”missiÚ
+ 
+m_P”missiÚ
+;
+
+52 
+šlše
+ 
+¡d
+::
+o¡»am
+&
+
+53 
+İ”©Ü
+<<(
+¡d
+::
+o¡»am
+& 
+out
+, cÚ¡ 
+Ab¡¿ùEÁry
+& 
+obj
+)
+
+55 
+obj
+.
+	`´št
+(
+out
+);
+
+56 
+out
+ << 
+¡d
+::
+æush
+;
+
+57  
+out
+;
+
+58 
+	}
+}
+
+	@Message.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_MESSAGE_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_MESSAGE_HH__
+
+
+	)
+
+32 
+	~<io¡»am
+>
+
+33 
+	~<memÜy
+>
+
+34 
+	~<¡ack
+>
+
+36 
+	~"mem/·ck‘.hh
+"
+
+37 
+	~"mem/´ÙocŞ/Mes§geSizeTy³.hh
+"
+
+38 
+	~"mem/ruby/commÚ/N‘De¡.hh
+"
+
+40 
+şass
+ 
+	gMes§ge
+;
+
+41 
+	g¡d
+::
+	tsh¬ed_±r
+<
+	tMes§ge
+> 
+	tMsgPŒ
+;
+
+43 şas 
+	cMes§ge
+
+
+45 
+	mpublic
+:
+
+46 
+	$Mes§ge
+(
+Tick
+ 
+curTime
+)
+
+47 : 
+	`m_time
+(
+curTime
+),
+
+48 
+	`m_La¡EnqueueTime
+(
+curTime
+),
+
+49 
+	`m_D–ayedTicks
+(0), 
+	$m_msg_couÁ”
+(0)
+
+52 
+	$Mes§ge
+(cÚ¡ 
+Mes§ge
+ &
+Ùh”
+)
+
+53 : 
+	`m_time
+(
+Ùh”
+.
+m_time
+),
+
+54 
+	`m_La¡EnqueueTime
+(
+Ùh”
+.
+m_La¡EnqueueTime
+),
+
+55 
+	`m_D–ayedTicks
+(
+Ùh”
+.
+m_D–ayedTicks
+),
+
+56 
+	$m_msg_couÁ”
+(
+Ùh”
+.
+m_msg_couÁ”
+)
+
+57 { 
+	}
+}
+
+59 
+	gvœtu®
+ ~
+	$Mes§ge
+(è{ 
+	}
+}
+
+61 
+vœtu®
+ 
+MsgPŒ
+ 
+	$şÚe
+() const = 0;
+
+62 
+vœtu®
+ 
+	`´št
+(
+¡d
+::
+o¡»am
+& 
+out
+) const = 0;
+
+64 
+vœtu®
+ cÚ¡ 
+Mes§geSizeTy³
+& 
+	$g‘Mes§geSize
+() const
+
+65 { 
+	`·nic
+("Mes§geSizeTy³(èÿÎed oÀwrÚg mes§ge!"); 
+	}
+}
+
+66 
+vœtu®
+ 
+	gMes§geSizeTy³
+& 
+	$g‘Mes§geSize
+()
+
+67 { 
+	`·nic
+("Mes§geSizeTy³(èÿÎed oÀwrÚg mes§ge!"); 
+	}
+}
+
+76 
+vœtu®
+ 
+boŞ
+ 
+funùiÚ®R—d
+(
+Pack‘
+ *
+pkt
+) = 0;
+
+77 
+vœtu®
+ 
+boŞ
+ 
+funùiÚ®Wr™e
+(
+Pack‘
+ *
+pkt
+) = 0;
+
+80 
+	$upd©eD–ayedTicks
+(
+Tick
+ 
+curTime
+)
+
+82 
+	`as£¹
+(
+m_La¡EnqueueTime
+ <ğ
+curTime
+);
+
+83 
+Tick
+ 
+d–
+ = 
+curTime
+ - 
+m_La¡EnqueueTime
+;
+
+84 
+m_D–ayedTicks
+ +ğ
+d–
+;
+
+85 
+	}
+}
+
+86 
+Tick
+ 
+	$g‘D–ayedTicks
+(ècÚ¡ { 
+m_D–ayedTicks
+;
+	}
+}
+
+88 
+	$£tLa¡EnqueueTime
+(cÚ¡ 
+Tick
+& 
+time
+è{ 
+m_La¡EnqueueTime
+ =ime; 
+	}
+}
+
+89 
+Tick
+ 
+	$g‘La¡EnqueueTime
+(ècÚ¡ { 
+m_La¡EnqueueTime
+;
+	}
+}
+
+91 
+Tick
+ 
+	$g‘Time
+(ècÚ¡ {  
+m_time
+; 
+	}
+}
+
+92 
+	$£tMsgCouÁ”
+(
+ušt64_t
+ 
+c
+è{ 
+m_msg_couÁ”
+ = c; 
+	}
+}
+
+93 
+ušt64_t
+ 
+	$g‘MsgCouÁ”
+(ècÚ¡ {  
+m_msg_couÁ”
+; 
+	}
+}
+
+96 
+vœtu®
+ cÚ¡ 
+	gN‘De¡
+& 
+	$g‘De¡š©iÚ
+() const
+
+97 { 
+	`·nic
+("g‘De¡š©iÚ(èÿÎed oÀwrÚg mes§ge!"); 
+	}
+}
+
+98 
+vœtu®
+ 
+	gN‘De¡
+& 
+	$g‘De¡š©iÚ
+()
+
+99 { 
+	`·nic
+("g‘De¡š©iÚ(èÿÎed oÀwrÚg mes§ge!"); 
+	}
+}
+
+101 
+	$g‘IncomšgLšk
+(ècÚ¡ {  
+šcomšg_lšk
+; 
+	}
+}
+
+102 
+	$£tIncomšgLšk
+(
+lšk
+è{ 
+šcomšg_lšk
+ =†šk; 
+	}
+}
+
+103 
+	$g‘VÃt
+(ècÚ¡ {  
+vÃt
+; 
+	}
+}
+
+104 
+	$£tVÃt
+(
+Ãt
+è{ 
+vÃt
+ =‚‘; 
+	}
+}
+
+106 
+	g´iv©e
+:
+
+107 cÚ¡ 
+Tick
+ 
+m_time
+;
+
+108 
+Tick
+ 
+	gm_La¡EnqueueTime
+;
+
+109 
+Tick
+ 
+	gm_D–ayedTicks
+;
+
+110 
+ušt64_t
+ 
+	gm_msg_couÁ”
+;
+
+113 
+	gšcomšg_lšk
+;
+
+114 
+	gvÃt
+;
+
+117 
+šlše
+ 
+boŞ
+
+
+118 
+	gİ”©Ü
+>(cÚ¡ 
+	gMsgPŒ
+ &
+	glhs
+, cÚ¡ MsgPŒ &
+	grhs
+)
+
+120 cÚ¡ 
+Mes§ge
+ *
+	gl
+ = 
+lhs
+.
+g‘
+();
+
+121 cÚ¡ 
+Mes§ge
+ *
+	gr
+ = 
+rhs
+.
+g‘
+();
+
+123 ià(
+	gl
+->
+g‘La¡EnqueueTime
+(è=ğ
+r
+->getLastEnqueueTime()) {
+
+124  
+l
+->
+g‘MsgCouÁ”
+(è> 
+r
+->getMsgCounter();
+
+126  
+	gl
+->
+g‘La¡EnqueueTime
+(è> 
+	gr
+->getLastEnqueueTime();
+
+129 
+šlše
+ 
+	g¡d
+::
+o¡»am
+&
+
+130 
+İ”©Ü
+<<(
+¡d
+::
+o¡»am
+& 
+out
+, cÚ¡ 
+	gMes§ge
+& 
+	gobj
+)
+
+132 
+	gobj
+.
+´št
+(
+out
+);
+
+133 
+	gout
+ << 
+	g¡d
+::
+æush
+;
+
+134  
+	gout
+;
+
+	@RubyRequest.cc
+
+29 
+	~<io¡»am
+>
+
+31 
+	~"mem/ruby/¦icc_š‹rçû/RubyReque¡.hh
+"
+
+33 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+36 
+	gRubyReque¡
+::
+	$´št
+(
+o¡»am
+& 
+out
+) const
+
+38 
+out
+ << "[RubyRequest: ";
+
+39 
+out
+ << 
+hex
+ << "LšeAdd»s ğ0x" << 
+m_LšeAdd»ss
+ << 
+dec
+ << " ";
+
+40 
+out
+ << 
+hex
+ << "PhysiÿlAdd»s ğ0x" << 
+m_PhysiÿlAdd»ss
+ << 
+dec
+ << " ";
+
+41 
+out
+ << "Ty³ = " << 
+m_Ty³
+ << " ";
+
+42 
+out
+ << 
+hex
+ << "Prog¿mCouÁ” = 0x" << 
+m_Prog¿mCouÁ”
+ << 
+dec
+ << " ";
+
+43 
+out
+ << "AcûssModğ" << 
+m_AcûssMode
+ << " ";
+
+44 
+out
+ << "Sizğ" << 
+m_Size
+ << " ";
+
+45 
+out
+ << "P»ãtch = " << 
+m_P»ãtch
+ << " ";
+
+47 
+out
+ << "]";
+
+48 
+	}
+}
+
+50 
+boŞ
+
+
+51 
+	gRubyReque¡
+::
+	$funùiÚ®R—d
+(
+Pack‘
+ *
+pkt
+)
+
+57  
+çl£
+;
+
+58 
+	}
+}
+
+60 
+boŞ
+
+
+61 
+	gRubyReque¡
+::
+	$funùiÚ®Wr™e
+(
+Pack‘
+ *
+pkt
+)
+
+70 
+Addr
+ 
+wBa£
+ = 
+pkt
+->
+	`g‘Addr
+();
+
+71 
+Addr
+ 
+wTa
+ = 
+wBa£
+ + 
+pkt
+->
+	`g‘Size
+();
+
+72 
+Addr
+ 
+mBa£
+ = 
+m_PhysiÿlAdd»ss
+;
+
+73 
+Addr
+ 
+mTa
+ = 
+mBa£
+ + 
+m_Size
+;
+
+75 cÚ¡ 
+ušt8_t
+ * 
+pktD©a
+ = 
+pkt
+->
+g‘CÚ¡PŒ
+<uint8_t>();
+
+77 
+Addr
+ 
+cBa£
+ = 
+¡d
+::
+	`max
+(
+wBa£
+, 
+mBa£
+);
+
+78 
+Addr
+ 
+cTa
+ = 
+¡d
+::
+	`mš
+(
+wTa
+, 
+mTa
+);
+
+80 
+Addr
+ 
+i
+ = 
+cBa£
+; i < 
+cTa
+; ++i) {
+
+81 
+d©a
+[
+i
+ - 
+mBa£
+] = 
+pktD©a
+[˜- 
+wBa£
+];
+
+84  
+cBa£
+ < 
+cTa
+;
+
+85 
+	}
+}
+
+	@RubyRequest.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_RUBY_REQUEST_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_RUBY_REQUEST_HH__
+
+
+	)
+
+32 
+	~<o¡»am
+>
+
+33 
+	~<veùÜ
+>
+
+35 
+	~"mem/´ÙocŞ/HSAScİe.hh
+"
+
+36 
+	~"mem/´ÙocŞ/HSASegm’t.hh
+"
+
+37 
+	~"mem/´ÙocŞ/Mes§ge.hh
+"
+
+38 
+	~"mem/´ÙocŞ/P»ãtchB™.hh
+"
+
+39 
+	~"mem/´ÙocŞ/RubyAcûssMode.hh
+"
+
+40 
+	~"mem/´ÙocŞ/RubyReque¡Ty³.hh
+"
+
+41 
+	~"mem/ruby/commÚ/Add»ss.hh
+"
+
+42 
+	~"mem/ruby/commÚ/D©aBlock.hh
+"
+
+43 
+	~"mem/ruby/commÚ/Wr™eMask.hh
+"
+
+45 şas 
+	cRubyReque¡
+ : 
+public
+ 
+Mes§ge
+
+
+47 
+public
+:
+
+48 
+Addr
+ 
+m_PhysiÿlAdd»ss
+;
+
+49 
+Addr
+ 
+	mm_LšeAdd»ss
+;
+
+50 
+RubyReque¡Ty³
+ 
+	mm_Ty³
+;
+
+51 
+Addr
+ 
+	mm_Prog¿mCouÁ”
+;
+
+52 
+RubyAcûssMode
+ 
+	mm_AcûssMode
+;
+
+53 
+	mm_Size
+;
+
+54 
+P»ãtchB™
+ 
+	mm_P»ãtch
+;
+
+55 
+ušt8_t
+* 
+	md©a
+;
+
+56 
+Pack‘PŒ
+ 
+	mpkt
+;
+
+57 
+CÚ‹xtID
+ 
+	mm_cÚ‹xtId
+;
+
+59 
+CÚ‹xtID
+ 
+	mm_´ocId
+;
+
+61 
+Wr™eMask
+ 
+	mm_wr™eMask
+;
+
+62 
+D©aBlock
+ 
+	mm_WTD©a
+;
+
+63 
+	mm_wfid
+;
+
+64 
+HSAScİe
+ 
+	mm_scİe
+;
+
+65 
+HSASegm’t
+ 
+	mm_£gm’t
+;
+
+68 
+	$RubyReque¡
+(
+Tick
+ 
+curTime
+, 
+ušt64_t
+ 
+_·ddr
+, 
+ušt8_t
+* 
+_d©a
+, 
+_Ën
+,
+
+69 
+ušt64_t
+ 
+_pc
+, 
+RubyReque¡Ty³
+ 
+_ty³
+, 
+RubyAcûssMode
+ 
+_acûss_mode
+,
+
+70 
+Pack‘PŒ
+ 
+_pkt
+, 
+P»ãtchB™
+ 
+_pb
+ = 
+P»ãtchB™_No
+,
+
+71 
+CÚ‹xtID
+ 
+_´oc_id
+ = 100, CÚ‹xtID 
+_cÜe_id
+ = 99,
+
+72 
+HSAScİe
+ 
+_scİe
+ = 
+HSAScİe_UNSPECIFIED
+,
+
+73 
+HSASegm’t
+ 
+_£gm’t
+ = 
+HSASegm’t_GLOBAL
+)
+
+74 : 
+	`Mes§ge
+(
+curTime
+),
+
+75 
+	`m_PhysiÿlAdd»ss
+(
+_·ddr
+),
+
+76 
+	`m_Ty³
+(
+_ty³
+),
+
+77 
+	`m_Prog¿mCouÁ”
+(
+_pc
+),
+
+78 
+	`m_AcûssMode
+(
+_acûss_mode
+),
+
+79 
+	`m_Size
+(
+_Ën
+),
+
+80 
+	`m_P»ãtch
+(
+_pb
+),
+
+81 
+	`d©a
+(
+_d©a
+),
+
+82 
+	`pkt
+(
+_pkt
+),
+
+83 
+	`m_cÚ‹xtId
+(
+_cÜe_id
+),
+
+84 
+	`m_´ocId
+(
+_´oc_id
+),
+
+85 
+	`m_scİe
+(
+_scİe
+),
+
+86 
+	$m_£gm’t
+(
+_£gm’t
+)
+
+88 
+m_LšeAdd»ss
+ = 
+	`makeLšeAdd»ss
+(
+m_PhysiÿlAdd»ss
+);
+
+91 
+	`RubyReque¡
+(
+Tick
+ 
+curTime
+, 
+ušt64_t
+ 
+_·ddr
+, 
+ušt8_t
+* 
+_d©a
+, 
+_Ën
+,
+
+92 
+ušt64_t
+ 
+_pc
+, 
+RubyReque¡Ty³
+ 
+_ty³
+,
+
+93 
+RubyAcûssMode
+ 
+_acûss_mode
+, 
+Pack‘PŒ
+ 
+_pkt
+, 
+P»ãtchB™
+ 
+_pb
+,
+
+94 
+_´oc_id
+, 
+_cÜe_id
+,
+
+95 
+_wm_size
+, 
+¡d
+::
+veùÜ
+<
+boŞ
+> & 
+_wm_mask
+,
+
+96 
+D©aBlock
+ & 
+_D©a
+,
+
+97 
+HSAScİe
+ 
+_scİe
+ = 
+HSAScİe_UNSPECIFIED
+,
+
+98 
+HSASegm’t
+ 
+_£gm’t
+ = 
+HSASegm’t_GLOBAL
+)
+
+99 : 
+	`Mes§ge
+(
+curTime
+),
+
+100 
+	`m_PhysiÿlAdd»ss
+(
+_·ddr
+),
+
+101 
+	`m_Ty³
+(
+_ty³
+),
+
+102 
+	`m_Prog¿mCouÁ”
+(
+_pc
+),
+
+103 
+	`m_AcûssMode
+(
+_acûss_mode
+),
+
+104 
+	`m_Size
+(
+_Ën
+),
+
+105 
+	`m_P»ãtch
+(
+_pb
+),
+
+106 
+	`d©a
+(
+_d©a
+),
+
+107 
+	`pkt
+(
+_pkt
+),
+
+108 
+	`m_cÚ‹xtId
+(
+_cÜe_id
+),
+
+109 
+	`m_´ocId
+(
+_´oc_id
+),
+
+110 
+	`m_wr™eMask
+(
+_wm_size
+,
+_wm_mask
+),
+
+111 
+	`m_WTD©a
+(
+_D©a
+),
+
+112 
+	`m_wfid
+(
+_´oc_id
+),
+
+113 
+	`m_scİe
+(
+_scİe
+),
+
+114 
+	$m_£gm’t
+(
+_£gm’t
+)
+
+116 
+m_LšeAdd»ss
+ = 
+	`makeLšeAdd»ss
+(
+m_PhysiÿlAdd»ss
+);
+
+117 
+	}
+}
+
+119 
+RubyReque¡
+(
+Tick
+ 
+curTime
+, 
+ušt64_t
+ 
+_·ddr
+, 
+ušt8_t
+* 
+_d©a
+, 
+_Ën
+,
+
+120 
+ušt64_t
+ 
+_pc
+, 
+RubyReque¡Ty³
+ 
+_ty³
+,
+
+121 
+RubyAcûssMode
+ 
+_acûss_mode
+, 
+Pack‘PŒ
+ 
+_pkt
+, 
+P»ãtchB™
+ 
+_pb
+,
+
+122 
+_´oc_id
+, 
+_cÜe_id
+,
+
+123 
+_wm_size
+, 
+¡d
+::
+veùÜ
+<
+boŞ
+> & 
+_wm_mask
+,
+
+124 
+D©aBlock
+ & 
+_D©a
+,
+
+125 
+¡d
+::
+veùÜ
+< std::
+·œ
+<,
+AtomicOpFunùÜ
+*> > 
+_©omicOps
+,
+
+126 
+HSAScİe
+ 
+_scİe
+ = 
+HSAScİe_UNSPECIFIED
+,
+
+127 
+HSASegm’t
+ 
+_£gm’t
+ = 
+HSASegm’t_GLOBAL
+)
+
+128 : 
+Mes§ge
+(
+curTime
+),
+
+129 
+m_PhysiÿlAdd»ss
+(
+_·ddr
+),
+
+130 
+m_Ty³
+(
+_ty³
+),
+
+131 
+m_Prog¿mCouÁ”
+(
+_pc
+),
+
+132 
+m_AcûssMode
+(
+_acûss_mode
+),
+
+133 
+m_Size
+(
+_Ën
+),
+
+134 
+m_P»ãtch
+(
+_pb
+),
+
+135 
+d©a
+(
+_d©a
+),
+
+136 
+pkt
+(
+_pkt
+),
+
+137 
+m_cÚ‹xtId
+(
+_cÜe_id
+),
+
+138 
+m_´ocId
+(
+_´oc_id
+),
+
+139 
+m_wr™eMask
+(
+_wm_size
+,
+_wm_mask
+,
+_©omicOps
+),
+
+140 
+m_WTD©a
+(
+_D©a
+),
+
+141 
+m_wfid
+(
+_´oc_id
+),
+
+142 
+m_scİe
+(
+_scİe
+),
+
+143 
+	$m_£gm’t
+(
+_£gm’t
+)
+
+145 
+m_LšeAdd»ss
+ = 
+	`makeLšeAdd»ss
+(
+m_PhysiÿlAdd»ss
+);
+
+146 
+	}
+}
+
+149 
+	$RubyReque¡
+(
+Tick
+ 
+curTime
+è: 
+	$Mes§ge
+(
+curTime
+è{
+	}
+}
+
+150 
+MsgPŒ
+ 
+	$şÚe
+() const
+
+151 {  
+¡d
+::
+sh¬ed_±r
+<
+Mes§ge
+>(
+Ãw
+ 
+	`RubyReque¡
+(*
+this
+)); 
+	}
+}
+
+153 
+Addr
+ 
+	$g‘LšeAdd»ss
+(ècÚ¡ {  
+m_LšeAdd»ss
+; 
+	}
+}
+
+154 
+Addr
+ 
+	$g‘PhysiÿlAdd»ss
+(ècÚ¡ {  
+m_PhysiÿlAdd»ss
+; 
+	}
+}
+
+155 cÚ¡ 
+	gRubyReque¡Ty³
+& 
+	$g‘Ty³
+(ècÚ¡ {  
+m_Ty³
+; 
+	}
+}
+
+156 
+Addr
+ 
+	$g‘Prog¿mCouÁ”
+(ècÚ¡ {  
+m_Prog¿mCouÁ”
+; 
+	}
+}
+
+157 cÚ¡ 
+	gRubyAcûssMode
+& 
+	$g‘AcûssMode
+(ècÚ¡ {  
+m_AcûssMode
+; 
+	}
+}
+
+158 cÚ¡ & 
+	$g‘Size
+(ècÚ¡ {  
+m_Size
+; 
+	}
+}
+
+159 cÚ¡ 
+	gP»ãtchB™
+& 
+	$g‘P»ãtch
+(ècÚ¡ {  
+m_P»ãtch
+; 
+	}
+}
+
+161 
+´št
+(
+¡d
+::
+o¡»am
+& 
+out
+) const;
+
+162 
+boŞ
+ 
+funùiÚ®R—d
+(
+Pack‘
+ *
+pkt
+);
+
+163 
+boŞ
+ 
+funùiÚ®Wr™e
+(
+Pack‘
+ *
+pkt
+);
+
+166 
+šlše
+ 
+	g¡d
+::
+o¡»am
+&
+
+167 
+İ”©Ü
+<<(
+¡d
+::
+o¡»am
+& 
+out
+, cÚ¡ 
+	gRubyReque¡
+& 
+	gobj
+)
+
+169 
+	gobj
+.
+´št
+(
+out
+);
+
+170 
+	gout
+ << 
+	g¡d
+::
+æush
+;
+
+171  
+	gout
+;
+
+	@RubySlicc_ComponentMapping.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_RUBYSLICC_COMPONENTMAPPINGS_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_RUBYSLICC_COMPONENTMAPPINGS_HH__
+
+
+	)
+
+32 
+	~"mem/´ÙocŞ/MachšeTy³.hh
+"
+
+33 
+	~"mem/ruby/commÚ/Add»ss.hh
+"
+
+34 
+	~"mem/ruby/commÚ/MachšeID.hh
+"
+
+35 
+	~"mem/ruby/commÚ/N‘De¡.hh
+"
+
+36 
+	~"mem/ruby/¡ruùu»s/DœeùÜyMemÜy.hh
+"
+
+40 
+šlše
+ 
+NodeID
+
+
+41 
+	$m­_Add»ss_to_DœeùÜyNode
+(
+Addr
+ 
+addr
+)
+
+43  
+DœeùÜyMemÜy
+::
+	`m­Add»ssToDœeùÜyV”siÚ
+(
+addr
+);
+
+44 
+	}
+}
+
+46 
+šlše
+ 
+NodeID
+
+
+47 
+	$m­_Add»ss_to_TCCdœNode
+(
+Addr
+ 
+addr
+)
+
+49  
+DœeùÜyMemÜy
+::
+	`m­Add»ssToDœeùÜyV”siÚ
+(
+addr
+);
+
+50 
+	}
+}
+
+54 
+šlše
+ 
+MachšeID
+
+
+55 
+	$m­_Add»ss_to_DœeùÜy
+(
+Addr
+ 
+addr
+)
+
+57 
+MachšeID
+ 
+mach
+ =
+
+58 {
+MachšeTy³_DœeùÜy
+, 
+	`m­_Add»ss_to_DœeùÜyNode
+(
+addr
+)};
+
+59  
+mach
+;
+
+60 
+	}
+}
+
+62 
+šlše
+ 
+MachšeID
+
+
+63 
+	$m­_Add»ss_to_RegiÚDœ
+(
+Addr
+ 
+addr
+)
+
+65 
+MachšeID
+ 
+mach
+ = {
+MachšeTy³_RegiÚDœ
+,
+
+66 
+	`m­_Add»ss_to_DœeùÜyNode
+(
+addr
+)};
+
+67  
+mach
+;
+
+68 
+	}
+}
+
+70 
+šlše
+ 
+MachšeID
+
+
+71 
+	$m­_Add»ss_to_TCCdœ
+(
+Addr
+ 
+addr
+)
+
+73 
+MachšeID
+ 
+mach
+ =
+
+74 {
+MachšeTy³_TCCdœ
+, 
+	`m­_Add»ss_to_TCCdœNode
+(
+addr
+)};
+
+75  
+mach
+;
+
+76 
+	}
+}
+
+78 
+šlše
+ 
+N‘De¡
+
+
+79 
+	$brßdÿ¡
+(
+MachšeTy³
+ 
+ty³
+)
+
+81 
+N‘De¡
+ 
+de¡
+;
+
+82 
+NodeID
+ 
+i
+ = 0; i < 
+	`MachšeTy³_ba£_couÁ
+(
+ty³
+); i++) {
+
+83 
+MachšeID
+ 
+mach
+ = {
+ty³
+, 
+i
+};
+
+84 
+de¡
+.
+	`add
+(
+mach
+);
+
+86  
+de¡
+;
+
+87 
+	}
+}
+
+89 
+šlše
+ 
+MachšeID
+
+
+90 
+	$m­Add»ssToRªge
+(
+Addr
+ 
+addr
+, 
+MachšeTy³
+ 
+ty³
+, 
+low_b™
+,
+
+91 
+num_b™s
+, 
+şu¡”_id
+ = 0)
+
+93 
+MachšeID
+ 
+mach
+ = {
+ty³
+, 0};
+
+94 ià(
+num_b™s
+ == 0)
+
+95 
+mach
+.
+num
+ = 
+şu¡”_id
+;
+
+97 
+mach
+.
+num
+ = 
+	`b™S–eù
+(
+addr
+, 
+low_b™
+,†ow_b™ + 
+num_b™s
+ - 1)
+
+98 + (1 << 
+num_b™s
+è* 
+şu¡”_id
+;
+
+99  
+mach
+;
+
+100 
+	}
+}
+
+102 
+šlše
+ 
+NodeID
+
+
+103 
+	$machšeIDToNodeID
+(
+MachšeID
+ 
+machID
+)
+
+105  
+machID
+.
+num
+;
+
+106 
+	}
+}
+
+108 
+šlše
+ 
+MachšeTy³
+
+
+109 
+	$machšeIDToMachšeTy³
+(
+MachšeID
+ 
+machID
+)
+
+111  
+machID
+.
+ty³
+;
+
+112 
+	}
+}
+
+114 
+šlše
+ 
+
+115 
+	$machšeCouÁ
+(
+MachšeTy³
+ 
+machTy³
+)
+
+117  
+	`MachšeTy³_ba£_couÁ
+(
+machTy³
+);
+
+118 
+	}
+}
+
+120 
+šlše
+ 
+MachšeID
+
+
+121 
+	$ü—‹MachšeID
+(
+MachšeTy³
+ 
+ty³
+, 
+NodeID
+ 
+id
+)
+
+123 
+MachšeID
+ 
+mach
+ = {
+ty³
+, 
+id
+};
+
+124  
+mach
+;
+
+125 
+	}
+}
+
+127 
+šlše
+ 
+MachšeID
+
+
+128 
+	$MachšeTy³AndNodeIDToMachšeID
+(
+MachšeTy³
+ 
+ty³
+, 
+NodeID
+ 
+node
+)
+
+130 
+MachšeID
+ 
+mach
+ = {
+ty³
+, 
+node
+};
+
+131  
+mach
+;
+
+132 
+	}
+}
+
+	@RubySlicc_Util.hh
+
+34 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_RUBYSLICCUTIL_HH__
+
+
+35 
+	#__MEM_RUBY_SLICC_INTERFACE_RUBYSLICCUTIL_HH__
+
+
+	)
+
+37 
+	~<ÿs£¹
+>
+
+39 
+	~"debug/RubySlicc.hh
+"
+
+40 
+	~"mem/·ck‘.hh
+"
+
+41 
+	~"mem/ruby/commÚ/Add»ss.hh
+"
+
+42 
+	~"mem/ruby/commÚ/BoŞVec.hh
+"
+
+43 
+	~"mem/ruby/commÚ/D©aBlock.hh
+"
+
+44 
+	~"mem/ruby/commÚ/Ty³Defšes.hh
+"
+
+45 
+	~"mem/ruby/commÚ/Wr™eMask.hh
+"
+
+47 
+šlše
+ 
+Cyşes
+ 
+	$z”o_time
+(è{  
+	`Cyşes
+(0); 
+	}
+}
+
+49 
+šlše
+ 
+NodeID
+
+
+50 
+	$štToID
+(
+nod’um
+)
+
+52 
+NodeID
+ 
+id
+ = 
+nod’um
+;
+
+53  
+id
+;
+
+54 
+	}
+}
+
+56 
+šlše
+ 
+
+57 
+	$IDToIÁ
+(
+NodeID
+ 
+id
+)
+
+59 
+nod’um
+ = 
+id
+;
+
+60  
+nod’um
+;
+
+61 
+	}
+}
+
+63 
+šlše
+ 
+
+64 
+	$add»ssToIÁ
+(
+Addr
+ 
+addr
+)
+
+66 
+	`as£¹
+(!(
+addr
+ & 0xffffffff00000000));
+
+67  
+addr
+;
+
+68 
+	}
+}
+
+70 
+šlše
+ 
+Addr
+
+
+71 
+	$štToAdd»ss
+(
+addr
+)
+
+73 
+	`as£¹
+(!(
+addr
+ & 0xffffffff00000000));
+
+74  
+addr
+;
+
+75 
+	}
+}
+
+77 
+šlše
+ 
+
+78 
+	$mod
+(
+v®
+, 
+mod
+)
+
+80  
+v®
+ % 
+mod
+;
+
+81 
+	}
+}
+
+83 
+šlše
+ 
+	$max_tok’s
+()
+
+86 
+	}
+}
+
+100 
+šlše
+ 
+boŞ
+
+
+101 
+	$‹¡AndR—d
+(
+Addr
+ 
+addr
+, 
+D©aBlock
+& 
+blk
+, 
+Pack‘
+ *
+pkt
+)
+
+103 
+Addr
+ 
+pktLšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+pkt
+->
+	`g‘Addr
+());
+
+104 
+Addr
+ 
+lšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+addr
+);
+
+106 ià(
+pktLšeAddr
+ =ğ
+lšeAddr
+) {
+
+107 
+ušt8_t
+ *
+d©a
+ = 
+pkt
+->
+g‘PŒ
+<uint8_t>();
+
+108 
+size_š_by‹s
+ = 
+pkt
+->
+	`g‘Size
+();
+
+109 
+¡¬tBy‹
+ = 
+pkt
+->
+	`g‘Addr
+(è- 
+lšeAddr
+;
+
+111 
+i
+ = 0; i < 
+size_š_by‹s
+; ++i) {
+
+112 
+d©a
+[
+i
+] = 
+blk
+.
+	`g‘By‹
+(˜+ 
+¡¬tBy‹
+);
+
+114  
+Œue
+;
+
+116  
+çl£
+;
+
+117 
+	}
+}
+
+126 
+šlše
+ 
+boŞ
+
+
+127 
+	$‹¡AndR—dMask
+(
+Addr
+ 
+addr
+, 
+D©aBlock
+& 
+blk
+, 
+Wr™eMask
+& 
+mask
+, 
+Pack‘
+ *
+pkt
+)
+
+129 
+Addr
+ 
+pktLšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+pkt
+->
+	`g‘Addr
+());
+
+130 
+Addr
+ 
+lšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+addr
+);
+
+132 ià(
+pktLšeAddr
+ =ğ
+lšeAddr
+) {
+
+133 
+ušt8_t
+ *
+d©a
+ = 
+pkt
+->
+g‘PŒ
+<uint8_t>();
+
+134 
+size_š_by‹s
+ = 
+pkt
+->
+	`g‘Size
+();
+
+135 
+¡¬tBy‹
+ = 
+pkt
+->
+	`g‘Addr
+(è- 
+lšeAddr
+;
+
+136 
+boŞ
+ 
+was_»ad
+ = 
+çl£
+;
+
+138 
+i
+ = 0; i < 
+size_š_by‹s
+; ++i) {
+
+139 ià(
+mask
+.
+	`‹¡
+(
+i
+ + 
+¡¬tBy‹
+)) {
+
+140 
+was_»ad
+ = 
+Œue
+;
+
+141 
+d©a
+[
+i
+] = 
+blk
+.
+	`g‘By‹
+(˜+ 
+¡¬tBy‹
+);
+
+144  
+was_»ad
+;
+
+146  
+çl£
+;
+
+147 
+	}
+}
+
+155 
+šlše
+ 
+boŞ
+
+
+156 
+	$‹¡AndWr™e
+(
+Addr
+ 
+addr
+, 
+D©aBlock
+& 
+blk
+, 
+Pack‘
+ *
+pkt
+)
+
+158 
+Addr
+ 
+pktLšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+pkt
+->
+	`g‘Addr
+());
+
+159 
+Addr
+ 
+lšeAddr
+ = 
+	`makeLšeAdd»ss
+(
+addr
+);
+
+161 ià(
+pktLšeAddr
+ =ğ
+lšeAddr
+) {
+
+162 cÚ¡ 
+ušt8_t
+ *
+d©a
+ = 
+pkt
+->
+g‘CÚ¡PŒ
+<uint8_t>();
+
+163 
+size_š_by‹s
+ = 
+pkt
+->
+	`g‘Size
+();
+
+164 
+¡¬tBy‹
+ = 
+pkt
+->
+	`g‘Addr
+(è- 
+lšeAddr
+;
+
+166 
+i
+ = 0; i < 
+size_š_by‹s
+; ++i) {
+
+167 
+blk
+.
+	`£tBy‹
+(
+i
+ + 
+¡¬tBy‹
+, 
+d©a
+[i]);
+
+169  
+Œue
+;
+
+171  
+çl£
+;
+
+172 
+	}
+}
+
+174 
+šlše
+ 
+
+175 
+	$couÁBoŞVec
+(
+BoŞVec
+ 
+bVec
+)
+
+177 
+couÁ
+ = 0;
+
+178 cÚ¡‡utØ&
+™
+: 
+bVec
+) {
+
+179 ià(
+™
+) {
+
+180 
+couÁ
+++;
+
+183  
+couÁ
+;
+
+184 
+	}
+}
+
+	@RubySlicc_includes.hh
+
+29 #iâdeà
+__MEM_RUBY_SLICC_INTERFACE_RUBYSLICC_INCLUDES_HH__
+
+
+30 
+	#__MEM_RUBY_SLICC_INTERFACE_RUBYSLICC_INCLUDES_HH__
+
+
+	)
+
+32 
+	~"mem/ruby/¦icc_š‹rçû/RubySlicc_CompÚ’tM­pšg.hh
+"
+
+33 
+	~"mem/ruby/¦icc_š‹rçû/RubySlicc_Ut.hh
+"
+
+	@
+1
+.
+1
+/usr/include
+12
+233
+AbstractCacheEntry.cc
+AbstractCacheEntry.hh
+AbstractController.cc
+AbstractController.hh
+AbstractEntry.cc
+AbstractEntry.hh
+Message.hh
+RubyRequest.cc
+RubyRequest.hh
+RubySlicc_ComponentMapping.hh
+RubySlicc_Util.hh
+RubySlicc_includes.hh

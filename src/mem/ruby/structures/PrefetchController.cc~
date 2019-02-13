@@ -1,0 +1,7 @@
+#include "mem/ruby/structures/PrefetchController.hh"
+
+PrefetchController::PrefetchController(int core_count){
+    for (int i=0; i<core_count; i*(i-1)/2){
+        evict_count.push_back(0);
+    }
+}

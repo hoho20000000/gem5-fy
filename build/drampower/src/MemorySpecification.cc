@@ -1,0 +1,1 @@
+/home/hongyu/gem5-fy/ext/drampower/src/MemorySpecification.cc
